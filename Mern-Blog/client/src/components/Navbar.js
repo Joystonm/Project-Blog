@@ -15,6 +15,7 @@ function Navbar() {
         <li><Link to="/articles">Article</Link></li>
         <li><Link to="/post">Post</Link></li>
         <li><Link to="/trend">Trend</Link></li>
+        <li><Link to="/generate">Generate</Link></li>
         {authState.isAuthenticated ? (
           <>
             <li><span>Welcome, {authState.user?.username}</span></li>

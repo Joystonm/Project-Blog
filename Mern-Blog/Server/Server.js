@@ -191,7 +191,8 @@ const Article = require("./models/Article");
 const summarizeRoute = require("./routes/summarize");
 const searchRoute = require("./routes/search");
 const userProfileRoute = require("./routes/userProfile"); // Adjust path if needed
-const redditRoutes = require('./routes/reddit');
+const redditRoutes = require("./routes/reddit");
+const generateRoute = require("./routes/generate");
 
 const app = express();
 app.use(cors());
@@ -396,9 +397,10 @@ app.use("/api", summarizeRoute);
 app.use("/search", searchRoute);
 
 //Reddit routes
-app.use('/api/reddit', redditRoutes);
+app.use("/api/reddit", redditRoutes);
 
-
+// Generate article route
+app.use("/api/generate", generateRoute);
 
 // Logout
 app.post("/api/auth/logout", (req, res) => {

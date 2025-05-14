@@ -13,6 +13,7 @@ import { AuthProvider } from "./components/AuthContext"; // Import the AuthProvi
 import About from "./components/About"; // Import the About component
 import Profile from "./components/Profile"; // Import the Profile component 
 import Trend from "./components/Trend"; // Import the Trend component 
+import Generate from "./components/generate"; // Import the Generate component
 import "./App.css";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/trend" element={<Trend />} />
+          <Route path="/generate" element={<Generate />} />
           <Route path="*" element={<NotFound />} />
           {/* You can add more routes here like <Route path="/about" element={<About />} /> */}
         </Routes>
