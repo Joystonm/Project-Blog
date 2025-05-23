@@ -101,7 +101,7 @@ The result? A blog post that sounds like *you*—written in your style, on your 
 * **Backend**: Node.js, Express.js
 * **Database**: MongoDB
 * **Authentication**: JSON Web Tokens (JWT)
-* **AI Services**: OpenAI API ,Azure (or similar)
+* **AI**: OpenAI API ,Azure (or similar)
 * **External API**: Reddit API
 * **Styling**: CSS
 
