@@ -85,19 +85,55 @@ Create content tailored to your personal style and mood:
 
 The result? A blog post that sounds like *you*—written in your style, on your topic, in your mood.
 
-## ScreenShot
+
+---
+
+## Screenshots Preview
+
+Here’s a quick look at what you can expect inside **BlogVerse**:
+
+---
+
+### Home Page
 
 ![Home Page](https://github.com/user-attachments/assets/3dbea292-ea6a-4ea5-b506-751145d17aea)
 
+---
+
+### Quick Article Summary
+
 ![Article-Quick Summary](https://github.com/user-attachments/assets/171d8103-c022-4854-af22-1f3be1914db5)
+
+---
+
+### Post
+
+Create and read beautifully formatted blog posts.
+
+![Post](https://github.com/user-attachments/assets/62915180-7e07-4f50-b625-8db86334f856)
+
+---
+
+### Trending Topics
+
+Stay updated with trending articles using Reddit + AI insights.
 
 ![Trend Page](https://github.com/user-attachments/assets/dd3d5e39-0e15-4f3e-add4-850085da3071)
 
+---
+
+### AI Generator
+
+Generate articles based on your writing style, topic, and mood.
+
 ![Generate](https://github.com/user-attachments/assets/446b9d6c-5c94-4092-9f6c-81234783777e)
+
+---
+
 
 ## Technologies Used
 
-* **Frontend**: React.js, React Router, Axios
+* **Frontend**: React.js
 * **Backend**: Node.js, Express.js
 * **Database**: MongoDB
 * **Authentication**: JSON Web Tokens (JWT)
