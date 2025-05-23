@@ -85,6 +85,13 @@ Create content tailored to your personal style and mood:
 
 The result? A blog post that sounds like *you*—written in your style, on your topic, in your mood.
 
+## ScreenShot
+![Home Page](https://github.com/user-attachments/assets/3dbea292-ea6a-4ea5-b506-751145d17aea)
+
+![Article-Quick Summary](https://github.com/user-attachments/assets/171d8103-c022-4854-af22-1f3be1914db5)
+
+![Trend Page](https://github.com/user-attachments/assets/dd3d5e39-0e15-4f3e-add4-850085da3071)
+
 ## Technologies Used
 
 * **Frontend**: React.js, React Router, Axios
