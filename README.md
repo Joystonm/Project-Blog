@@ -53,7 +53,7 @@ cd MERN-BLOG/server
 npm start
 ```
 
-Runs at: `http://localhost:5000`
+Runs at: `http://localhost:8000`
 
 ## Features
 
@@ -61,21 +61,21 @@ Runs at: `http://localhost:5000`
 * Create, read, and delete blog posts
 * Responsive UI with clean design
 
-### 🔥 New AI-Powered Features
+### New AI-Powered Features
 
-#### 🧠 AI Trend Analyzer (`/trend`)
+#### AI Trend Analyzer (`/trend`)
 
 * Integrates **Reddit API** to fetch currently trending articles.
 * Uses **AI** to analyze trending topics.
 * Recommends personalized topics based on user interest and activity.
 
-#### ✍️ AI Article Summary (`/articles`)
+#### AI Article Summary (`/articles`)
 
 * Allows users to input article URLs or text.
 * Summarizes lengthy content into bite-sized takeaways using AI.
 * Ideal for readers who want quick insights before diving deep.
 
-#### 🧬 AI Personality Generator (`/generate`)
+#### AI Personality Generator (`/generate`)
 
 Create content tailored to your personal style and mood:
 
@@ -91,7 +91,7 @@ The result? A blog post that sounds like *you*—written in your style, on your 
 * **Backend**: Node.js, Express.js
 * **Database**: MongoDB
 * **Authentication**: JSON Web Tokens (JWT)
-* **AI Services**: OpenAI API (or similar)
+* **AI Services**: OpenAI API ,Azure (or similar)
 * **External API**: Reddit API
 * **Styling**: CSS
 
