@@ -13,6 +13,8 @@ const About = () => {
         <li><strong>Post Articles</strong>: Write and publish your own blog posts effortlessly.</li>
         <li><strong>Edit Articles</strong>: Update your existing posts with new content anytime.</li>
         <li><strong>Generate Quick Summaries</strong>: Instantly create summaries for lengthy content using advanced summarization tools.</li>
+        <li><strong>Trending Page</strong>: Discover currently trending articles, and get AI-recommended topics based on trending insights.</li>
+        <li><strong>Personality-Based Content Generation</strong>: Paste or write your content style (chats, articles, etc.), choose a topic and mood (e.g., formal, sad, angry), and let AI generate content that mimics your unique tone.</li>
       </ul>
       <p className="about-footer">
         Whether you're a passionate writer or a reader who enjoys crisp summaries, BlogVerse is designed to enhance your blogging experience.
