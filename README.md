@@ -137,7 +137,7 @@ Generate articles based on your writing style, topic, and mood.
 * **Backend**: Node.js, Express.js
 * **Database**: MongoDB
 * **Authentication**: JSON Web Tokens (JWT)
-* **AI**: OpenAI API ,Azure (or similar)
+* **AI**: Azure OpenAI API
 * **External API**: Reddit API
 * **Styling**: CSS
 
