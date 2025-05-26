@@ -96,13 +96,13 @@ Here’s a quick look at what you can expect inside **BlogVerse**:
 
 ### Home Page
 
-![Home Page](https://github.com/user-attachments/assets/3dbea292-ea6a-4ea5-b506-751145d17aea)
+![Home Page](https://github.com/user-attachments/assets/7f6f0a8d-244d-4adb-8ee6-e846d6b79b89)
 
 ---
 
 ### Quick Article Summary
 
-![Article-Quick Summary](https://github.com/user-attachments/assets/171d8103-c022-4854-af22-1f3be1914db5)
+![Article-Quick Summary](https://github.com/user-attachments/assets/b7062f51-a3db-4d08-8ba7-740c598d6c45)
 
 ---
 
@@ -118,7 +118,7 @@ Create and read beautifully formatted blog posts.
 
 Stay updated with trending articles using Reddit + AI insights.
 
-![Trend Page](https://github.com/user-attachments/assets/dd3d5e39-0e15-4f3e-add4-850085da3071)
+![Trend Page](https://github.com/user-attachments/assets/7a155917-6420-4151-bd2a-eda5cc945d83)
 
 ---
 
