@@ -1,0 +1,170 @@
+/* Custom styles for the home page */
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(58, 134, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Hero Section Enhancements */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(45deg);
+}
+
+.hero-content {
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-image {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Feature Cards Enhancements */
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card.featured {
+  position: relative;
+}
+
+.feature-card.featured::before {
+  content: 'Featured';
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background-color: #ff006e;
+  color: white;
+  padding: 5px 30px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+/* Step Animations */
+.step-number {
+  animation: pulse 2s infinite;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 5rem;
+  font-family: 'Georgia', serif;
+  color: rgba(0, 0, 0, 0.05);
+  line-height: 1;
+}
+
+/* Play Button Animation */
+.play-button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Section Enhancements */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+  background-size: 30px 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .hero-content {
+    text-align: center;
+  }
+  
+  .step-connector {
+    display: none;
+  }
+  
+  .step {
+    margin-bottom: 40px;
+  }
+}
+
+/* Accessibility Improvements */
+:focus {
+  outline: 2px solid #3a86ff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

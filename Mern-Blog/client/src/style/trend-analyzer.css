@@ -1,0 +1,199 @@
+/* Custom styles for the Trend Analyzer page */
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0.4);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(58, 134, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(58, 134, 255, 0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Trend Header Enhancements */
+.trend-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.trend-header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+  transform: rotate(45deg);
+}
+
+.stat-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  animation: pulse 2s infinite;
+}
+
+/* Trend Map Enhancements */
+.trend-map {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(0,0,0,0.05)"/></svg>');
+  background-size: 30px 30px;
+}
+
+.trend-bubble {
+  animation: float 6s ease-in-out infinite;
+}
+
+.trend-bubble:nth-child(2n) {
+  animation-delay: 1s;
+}
+
+.trend-bubble:nth-child(3n) {
+  animation-delay: 2s;
+}
+
+.trend-bubble:nth-child(4n) {
+  animation-delay: 3s;
+}
+
+/* Recommendation Cards Enhancements */
+.recommendation-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation-card:hover {
+  transform: translateY(-8px);
+}
+
+.match-score {
+  position: relative;
+}
+
+.match-score::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: radial-gradient(circle, rgba(58, 134, 255, 0.1) 0%, rgba(58, 134, 255, 0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Article Cards Enhancements */
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.source-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.source-badge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 50%);
+}
+
+/* Pagination Enhancements */
+.pagination-button {
+  transition: transform 0.2s ease;
+}
+
+.pagination-button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 960px) {
+  .trend-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-card {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 16px;
+  }
+  
+  .trend-map {
+    height: 300px;
+  }
+  
+  .trend-bubble.large {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .trend-bubble.medium {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .trend-bubble.small {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Accessibility Improvements */
+:focus {
+  outline: 2px solid #3a86ff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
